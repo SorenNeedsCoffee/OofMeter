@@ -40,6 +40,9 @@ export default {
           parseInt(this.e),
           parseInt(this.f)
         );
+        let audio = new Audio(require("../assets/OOF.mp3"));
+        audio.playbackRate = (test[0]*0.01);
+        audio.play();
         this.display = `The current danger rating: ${test[0]}. ${test[1]}`;
       }
     },
