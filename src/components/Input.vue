@@ -1,15 +1,26 @@
 <template>
   <label v-on:input="calc">
-    <input type="number" v-model="a" placeholder="Teachers out" />
+    How many teachers do you need? <input type="number" v-model="a" placeholder="Teachers out" />
+    <br/>
+    How many in-house substitutes are available? 
     <input type="number" v-model="b" placeholder="In-house Subs (total)" />
+    <br/>
+    How many outside substitutes are available? 
     <input type="number" v-model="c" placeholder="Available outside subs" />
+    <br/>
+    How many monitors are available?
     <input type="number" v-model="f" placeholder="Classroom monitors" />
+    <br/>
+    How many IA/EA are available?
     <input type="number" v-model="d" placeholder="IA/EA" />
+    <br/>
+    How many winning teachers are available
     <input
       type="number"
       v-model="e"
       placeholder="Teachers willing to give up planning"
     />
+    <br/>
   </label>
   <span>{{ display }}</span>
 </template>
