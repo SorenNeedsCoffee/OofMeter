@@ -14,7 +14,7 @@
     How many IA/EA are available?
     <input type="number" v-model="d" placeholder="IA/EA" />
     <br/>
-    How many winning teachers are available
+    How many willing teachers are available?
     <input
       type="number"
       v-model="e"
