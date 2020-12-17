@@ -1,27 +1,36 @@
 <template>
   <label>
-    How many teachers do you need? <input type="number" v-model="a" placeholder="Teachers out" />
-    <br/>
-    How many in-house substitutes are available? 
-    <input type="number" v-model="b" placeholder="In-house Subs (total)" />
-    <br/>
-    How many outside substitutes are available? 
-    <input type="number" v-model="c" placeholder="Available outside subs" />
-    <br/>
-    How many monitors are available?
-    <input type="number" v-model="f" placeholder="Classroom monitors" />
-    <br/>
-    How many IA/EA are available?
-    <input type="number" v-model="d" placeholder="IA/EA" />
-    <br/>
-    How many winning teachers are available
-    <input
-      type="number"
-      v-model="e"
-      placeholder="Teachers willing to give up planning"
-    />
-    <br/>
-  </label>
+    <table style="margin:auto;">
+      <tr>
+        <td>How many teachers do you need?</td>
+        <td><input type="number" v-model="a" placeholder="Teachers out" /></td>
+      </tr>
+      <tr>
+        <td>How many in-house substitutes are available?</td>
+        <td><input type="number" v-model="b" placeholder="In-house Subs (total)" /></td>
+      </tr>
+      <tr>
+        <td>How many outside substitutes are available?</td>
+        <td><input type="number" v-model="c" placeholder="Available outside subs" /></td>
+      </tr>
+      <tr>
+        <td>How many monitors are available?</td>
+        <td><input type="number" v-model="f" placeholder="Classroom monitors" /></td>
+      </tr>
+      <tr>
+        <td>How many IA/EA are available?</td>
+        <td><input type="number" v-model="d" placeholder="IA/EA" /></td>
+      </tr>
+      <tr>
+        <td>How many winning teachers are available</td>
+        <td><input
+          type="number"
+          v-model="e"
+          placeholder="Teachers willing to give up planning"
+        /></td>
+      </tr>
+    </table>
+    </label>
   <div style="display: flex;justify-content: center;">
     <button v-on:click="calc" style="display:block;font-size:72px;text-align:center;margin:50px;padding:30px;">Find out</button>
   </div>
