@@ -1,5 +1,5 @@
 <template>
-  <label v-on:input="calc">
+  <label>
     How many teachers do you need? <input type="number" v-model="a" placeholder="Teachers out" />
     <br/>
     How many in-house substitutes are available? 
