@@ -1,5 +1,5 @@
 <template>
-  <label v-on:input="calc">
+  <label>
     <input type="number" v-model="a" placeholder="Teachers out" />
     <input type="number" v-model="b" placeholder="In-house Subs (total)" />
     <input type="number" v-model="c" placeholder="Available outside subs" />
@@ -11,7 +11,10 @@
       placeholder="Teachers willing to give up planning"
     />
   </label>
-  <span>{{ display }}</span>
+  <div style="display: flex;justify-content: center;">
+    <button v-on:click="calc" style="display:block;font-size:72px;text-align:center;margin:50px;padding:30px;">Find out</button>
+  </div>
+  <div><span style="font-size:52px;">{{ display }}</span></div>
 </template>
 
 <script>
